@@ -1,0 +1,14 @@
+addReviewers: true
+addAssignees: author
+
+  - ha2pex
+  - Vanxdium
+  
+numberOfReviewers: 1
+
+  - ha2pex
+  - Vanxdium
+  
+numberOfAssignees: 0
+
+  - wip
