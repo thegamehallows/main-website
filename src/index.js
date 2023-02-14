@@ -17,6 +17,7 @@ function load() {
 	footer.id = 'footer'; // Sets the ID to 'footer'
 	footer.classList.add('bg-black', 'text-center', 'p-8'); // Tailwind classes
 	const footerContent = `
-	©2023 - happex` // Content
+	©2023 - happex` // Creates content
+	footer.innerText = footerContent; // Sets footer's inner text to created content
 	document.body.appendChild(footer); // Add the element to HTML page
 }
