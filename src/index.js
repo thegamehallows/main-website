@@ -1,4 +1,5 @@
 function load() {
+	// Page wrapper
 	const navbar = document.querySelector('#navigation');
 	const navbarContent = `
 	<button class="h-full py-auto"><a href="/"><img src="/static/assets/logo.png" class="w-10 h-auto rounded-md shadow-lg" /></a></button>
@@ -10,4 +11,12 @@ function load() {
 	<button class="hidden h-full px-4 py-auto md:block hover:bg-slate-50/5 hover:border-b-4 hover:border-b-blue-500"><a href="./terms.html" class="text-sm font-medium">Terms</a></button>
 	<button class="hidden h-full px-4 py-auto md:block hover:bg-slate-50/5 hover:border-b-4 hover:border-b-blue-500"><a href="./infos.html" class="text-sm font-medium">Informations</a></button>`
 	navbar.innerHTML = navbarContent;
+	
+	// Footer
+	const footer = document.createElement('footer'); // Creates the element
+	footer.id = 'footer'; // Sets the ID to 'footer'
+	footer.classList.add('bg-black', 'text-center', 'p-8'); // Tailwind classes
+	const footerContent = `
+	©2023 - happex` // Content
+	document.body.appendChild(footer); // Add the element to HTML page
 }
