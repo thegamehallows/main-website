@@ -50,5 +50,5 @@ function load(page) {
 	head.appendChild(desc);
 	head.appendChild(image);
 	head.appendChild(color);
-	head.appendChild(author);, desc, image, color, author]);
+	head.appendChild(author);
 }
