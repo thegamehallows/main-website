@@ -44,11 +44,10 @@ function load(page) {
 	color.content = '#a21caf';
 	author.property = 'og:author';
 	author.content = 'happex, Vxnadium';
-
-	head = document.head;
-	head.appendChild(title);
-	head.appendChild(desc);
-	head.appendChild(image);
-	head.appendChild(color);
-	head.appendChild(author);
+	
+	document.head.appendChild(title);
+	document.head.appendChild(desc);
+	document.head.appendChild(image);
+	document.head.appendChild(color);
+	docuoent.head.appendChild(author);
 }
