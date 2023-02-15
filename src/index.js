@@ -49,5 +49,5 @@ function load(page) {
 	document.head.appendChild(desc);
 	document.head.appendChild(image);
 	document.head.appendChild(color);
-	docuoent.head.appendChild(author);
+	document.head.appendChild(author);
 }
