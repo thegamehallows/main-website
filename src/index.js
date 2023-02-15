@@ -27,17 +27,17 @@ function load(page) {
 		join:"Join the Game Hallows. It's open to everyone and it's free :) Everyone will welcome you as a king.",
 		terms:"Read the Game Hallows' terms."
 	}
-	let meta   = document.createElement('meta'),
-	     title = meta,
-	      desc = meta,
-	     image = meta,
-	     color = meta,
+	let meta = document.createElement('meta'),
+	    title = meta,
+	    desc = meta,
+	    image = meta,
+	    color = meta,
 	    author = meta;
 	
 	title.property = 'og:title';
 	title.content = 'The Game Hallows - ${page}';
 	desc.property = 'description';
-	desc.content = descriptions.[page];
+	desc.content = descriptions[page];
 	image.property = 'og:image';
 	image.content = '/static/assets/banner.png';
 	color.property = 'og:color';
