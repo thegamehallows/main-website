@@ -1,4 +1,4 @@
-function load() {
+function load(page) {
 	// Page wrapper
 	const navbar = document.querySelector('#navigation');
 	const navbarContent = `
@@ -19,4 +19,32 @@ function load() {
 	const footerContent = '©2023 - happex' // Creates content
 	footer.innerText = footerContent; // Sets footer's inner text to created content
 	document.body.appendChild(footer); // Add the element to HTML page
+	
+	// Meta tags
+	const page = page;
+	const descriptions = {
+		about:"Just a group of gamers who stream and make games with the resources they have. It's that easy to join us, you just have to go on the joining page and then choose your platform. We are open to any gamer. Mobile, desktop, Xbox, Nintendo Switch... There is a specified comfortable place for each gamer no matter where he plays.",
+		infos:"Informations about The Game Hallows.",
+		join:"Join the Game Hallows. It's open to everyone and it's free :) Everyone will welcome you as a king.",
+		terms:"Read the Game Hallows' terms."
+	}
+	let meta   = document.createElement('meta'),
+	     title = meta,
+	      desc = meta,
+	     image = meta,
+	     color = meta,
+	    author = meta;
+	
+	title.property = 'og:title';
+	title.content = 'The Game Hallows - ${page}';
+	desc.property = 'description';
+	desc.content = descriptions.[page];
+	image.property = 'og:image';
+	image.content = '/static/assets/banner.png';
+	color.property = 'og:color';
+	color.content = '#a21caf';
+	author.property = 'og:author';
+	author.content = 'happex, Vxnadium';
+
+	document.head.appendChild(title, desc, image, color, author);
 }
