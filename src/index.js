@@ -43,7 +43,7 @@ function load(page) {
 	color.property = 'og:color';
 	color.content = '#a21caf';
 	author.property = 'og:author';
-	author.content = 'happex, Vxnadium';
+	author.content = 'happex, Vanxdium';
 	
 	document.head.appendChild(title);
 	document.head.appendChild(desc);
