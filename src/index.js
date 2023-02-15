@@ -45,5 +45,5 @@ function load(page) {
 	author.property = 'og:author';
 	author.content = 'happex, Vxnadium';
 
-	document.head.appendChild(title, desc, image, color, author);
+	document.head.appendChild([title, desc, image, color, author]);
 }
