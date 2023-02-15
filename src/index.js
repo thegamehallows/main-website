@@ -21,7 +21,6 @@ function load(page) {
 	document.body.appendChild(footer); // Add the element to HTML page
 	
 	// Meta tags
-	const page = page;
 	const descriptions = {
 		about:"Just a group of gamers who stream and make games with the resources they have. It's that easy to join us, you just have to go on the joining page and then choose your platform. We are open to any gamer. Mobile, desktop, Xbox, Nintendo Switch... There is a specified comfortable place for each gamer no matter where he plays.",
 		infos:"Informations about The Game Hallows.",
