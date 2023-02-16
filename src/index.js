@@ -15,12 +15,12 @@ function load(page) {
 	// Footer
 	const footer = document.createElement('footer'); // Creates the element
 	footer.id = 'footer'; // Sets the ID to 'footer'
-	footer.classList.add('bg-black', 'text-center', 'p-8'); // Tailwind classes
+	footer.classList.add('text-center', 'p-8'); // Tailwind classes
 	const footerContent = '©2023 - happex' // Creates content
 	footer.innerText = footerContent; // Sets footer's inner text to created content
 	document.body.appendChild(footer); // Add the element to HTML page
 	
-	// Meta tags
+	/* Meta tags
 	const descriptions = {
 		about:"Just a group of gamers who stream and make games with the resources they have. It's that easy to join us, you just have to go on the joining page and then choose your platform. We are open to any gamer. Mobile, desktop, Xbox, Nintendo Switch... There is a specified comfortable place for each gamer no matter where he plays.",
 		infos:"Informations about The Game Hallows.",
@@ -49,5 +49,5 @@ function load(page) {
 	document.head.appendChild(desc);
 	document.head.appendChild(image);
 	document.head.appendChild(color);
-	document.head.appendChild(author);
+	document.head.appendChild(author); */
 }
