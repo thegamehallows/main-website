@@ -14,7 +14,7 @@ function load(page) {
 	navbar.innerHTML = navbarContent;
 	
 	// App
-	const app = querySelector('#content');
+	const app = document.querySelector('#content');
 	app.classList.add('mt-16');
 	
 	// Footer
