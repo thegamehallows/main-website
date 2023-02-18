@@ -1,7 +1,7 @@
 function load(page) {
 	// Page wrapper
 	const navbar = document.querySelector('#navigation');
-	navbar.classList.add('flex', 'bg-blue-600', 'border-b', 'border-b-2', 'border-b-slate-100/25', 'h-16', 'px-8', 'md:px-36'); 
+	navbar.classList.add('flex', 'bg-blue-600', 'border-b', 'border-b-2', 'border-b-slate-100/25', 'h-16', 'px-8', 'fixed', 'top-0', 'md:px-36'); 
 	const navbarContent = `
 	<button class="h-full py-auto"><a href="/"><img src="/static/assets/logo.png" class="w-10 h-auto rounded-md shadow-lg" /></a></button>
 	<button class="h-full"><button class="bg-gradient-to-br from-blue-600 via-indigo-500 to-fuchsia-600 text-white text-sm font-medium h-8 px-5 mx-4 my-auto rounded-full"><a href="./join.html">Join</a></button></button>
