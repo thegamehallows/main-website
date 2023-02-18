@@ -1,7 +1,7 @@
 function load(page) {
 	// Page wrapper
 	const navbar = document.querySelector('#navigation');
-	navbar.classList.add('flex', 'bg-blue-600', 'border-b', 'border-b-2', 'border-b-slate-100/25', 'h-16', 'px-8', 'fixed', 'top-0', 'md:px-36'); 
+	navbar.classList.add('flex', 'bg-blue-600', 'border-b', 'border-b-2', 'border-b-slate-100/25', 'w-full', 'h-16', 'px-8', 'fixed', 'top-0', 'md:px-36'); 
 	const navbarContent = `
 	<button class="h-full py-auto"><a href="/"><img src="/static/assets/logo.png" class="w-10 h-auto rounded-md shadow-lg" /></a></button>
 	<button class="h-full"><button class="bg-gradient-to-br from-blue-600 via-indigo-500 to-fuchsia-600 text-white text-sm font-medium h-8 px-5 mx-4 my-auto rounded-full"><a href="./join.html">Join</a></button></button>
@@ -12,6 +12,10 @@ function load(page) {
 	<button class="hidden h-full px-4 py-auto md:block hover:bg-slate-50/5 hover:border-b-4 hover:border-b-blue-500"><a href="./terms.html" class="text-sm font-medium">Terms</a></button>
 	<button class="hidden h-full px-4 py-auto md:block hover:bg-slate-50/5 hover:border-b-4 hover:border-b-blue-500"><a href="./infos.html" class="text-sm font-medium">Informations</a></button>`
 	navbar.innerHTML = navbarContent;
+	
+	// App
+	const app = querySelector('#content');
+	app.classList.add('mt-16');
 	
 	// Footer
 	const footer = document.createElement('footer'); // Creates the element
