@@ -1,0 +1,31 @@
+{
+  "name": "game-hallows",
+  "version": "1.0.0",
+  "description": "Main website of the Game Hallows",
+  "main": "/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegamehallows/main-www.git"
+  },
+  "keywords": [
+    "game",
+    "hallows",
+    "tailwindcss",
+    "expressjs"
+  ],
+  "author": "happex",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/thegamehallows/main-www/issues"
+  },
+  "homepage": "https://github.com/thegamehallows/main-www#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
