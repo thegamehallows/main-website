@@ -1,4 +1,4 @@
-import { pages } from './pages/app.js'
+import pages from './pages/app.js'
 const express = require('express')
 const app = express()
 const bridge = new Bridge('title')
