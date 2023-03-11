@@ -26,14 +26,14 @@ function load(page) {
 	document.body.appendChild(footer); // Add the element to HTML page
 	
 	// Head
-	
+	const docHead = document.head;
 	const descriptions = {
 		about:"Just a group of gamers who stream and make games with the resources they have. It's that easy to join us, you just have to go on the joining page and then choose your platform. We are open to any gamer. Mobile, desktop, Xbox, Nintendo Switch... There is a specified comfortable place for each gamer no matter where he plays.",
 		infos:"Informations about The Game Hallows.",
 		join:"Join the Game Hallows. It's open to everyone and it's free :) Everyone will welcome you as a king.",
 		terms:"Read the Game Hallows' terms."
 	}
-	document.head.innerHTML = `
+	const headContent = `
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>The Game Hallows - ${page}</title>
@@ -57,4 +57,5 @@ function load(page) {
 	<meta property="og:image" content="/static/assets/banner.png" />
 	<meta property="og:color" content="#a21caf" />
 	<meta property="og:author" content="happex, Vanxdium" />`
+	docHead.innerHTML = headContent;
 }
