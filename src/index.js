@@ -25,34 +25,36 @@ function load(page) {
 	footer.innerText = footerContent; // Sets footer's inner text to created content
 	document.body.appendChild(footer); // Add the element to HTML page
 	
-	/* Meta tags
+	// Head
+	
 	const descriptions = {
 		about:"Just a group of gamers who stream and make games with the resources they have. It's that easy to join us, you just have to go on the joining page and then choose your platform. We are open to any gamer. Mobile, desktop, Xbox, Nintendo Switch... There is a specified comfortable place for each gamer no matter where he plays.",
 		infos:"Informations about The Game Hallows.",
 		join:"Join the Game Hallows. It's open to everyone and it's free :) Everyone will welcome you as a king.",
 		terms:"Read the Game Hallows' terms."
 	}
-	let meta = document.createElement('meta'),
-	    title = meta,
-	    desc = meta,
-	    image = meta,
-	    color = meta,
-	    author = meta;
+	document.head.innerHTML = `
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>The Game Hallows - ${page}</title>
 	
-	title.property = 'og:title';
-	title.content = 'The Game Hallows - ${page}';
-	desc.property = 'description';
-	desc.content = descriptions[page];
-	image.property = 'og:image';
-	image.content = '/static/assets/banner.png';
-	color.property = 'og:color';
-	color.content = '#a21caf';
-	author.property = 'og:author';
-	author.content = 'happex, Vanxdium';
-	
-	document.head.appendChild(title);
-	document.head.appendChild(desc);
-	document.head.appendChild(image);
-	document.head.appendChild(color);
-	document.head.appendChild(author); */
+	<link rel="favicon" href="/static/assets/favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				fontFamily: {
+					'sans': ["'Lexend'", "sans-serif"],
+				} 
+			} 
+		} 
+	</script>
+	<meta property="og:title" content="The Game Hallows - ${page}" />
+	<meta property="og:description" content="${descriptions[page]}" />
+	<meta property="og:image" content="/static/assets/banner.png" />
+	<meta property="og:color" content="#a21caf" />
+	<meta property="og:author" content="happex, Vanxdium" />`
 }
